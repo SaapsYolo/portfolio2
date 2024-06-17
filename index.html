@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Siya.dev</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <div class="navbar">
+        <div class="logo">
+            <i class='bx bx-hot'></i>
+            <h1>Siya.dev</h1></div>
+        <div class="ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+        </div>
+        <div class="connect">Contact Me</div>
+        <box-icon name='menu' class="h-4" id="menu"></box-icon>
+        <box-icon name='x' class="h-3" id="menu2"></box-icon>
+    </div>
+    
+    <!-- HERO SECTION -->
+    <section class="container">  
+        <div class="contents">
+            <img src="Assets/Images/half body copy.png" alt="">
+            <div>
+                <div class="hero-text">
+                    <h2>Hi there!<br><span>I am Siyabulela Biyo</span></h2>
+                    <p>a software developer</p>
+                </div>
+    
+                <div class="buttons">
+                    <a href="#Contact_me" class="hire-me">Hire Me</a>
+                    <a href="Assets/downloads/SIYABULELA BIYO CV.pdf" target="_blank" class="download-cv">Download CV</a>
+                </div>
+
+                <li>
+                   
+                    <a href=""><box-icon type='logo' name='github' color="#f97068"></box-icon> </a>
+                    <a href=""><box-icon name='linkedin' type='logo' color="#f97068"></box-icon></a>
+                    <a href=""><box-icon name='youtube' type='logo' color="#f97068"></box-icon></a>
+                    <a href=""><box-icon name='twitter' type='logo' color="#f97068"></box-icon></a>
+                </li>
+                              
+                <!-- <i class='bx bxs-like bx-fade-down'></i> -->
+            </div>
+                        
+        </div>
+    </section>
+    <!-- ABOUT ME  -->
+  <section class="about-me">
+    <div class="container4">
+        <img src="Assets/Images/Selfie w beanie.JPG">
+        <div class="about-me-content">
+            <div class="about-me-text">
+                <h2><span>about me</span></h2><br>
+
+                <h2>Institution</h2>
+                <h3>Vaal University of Technology <span>(2024 - Present)</span></h3>
+                <p>Advanced Diploma in Information Technology</p>
+                <br>
+                <h3>Vaal University of Technology <span>(2021 - 2023)</span></h3>
+                <p>Diploma in Information Technology</p>
+                <br>
+                <h2>Technical Skills</h2>
+                <box-icon type='logo' name='java' color="#000"></box-icon>
+                <box-icon type='logo' name='php' color="#000"></box-icon>
+                <box-icon type='logo' name='javascript' color="#000"></box-icon>
+                <box-icon type='logo' name='react' color="#000"></box-icon>
+                <box-icon type='logo' name='git' color="#000"></box-icon>
+                <box-icon type='logo' name='' color="#000"></box-icon>
+
+
+
+            </div>
+        </div>
+
+    </div>
+  </section>
+    <!-- CONTACT ME -->
+    <section class="contact-me" id="#Contact_me">
+        <div class="container3" id="#Contact_me">
+           
+            <div class="logo">
+                <h1>Siya.dev</h1>
+                <p>a software developer</p>
+            </div>
+      
+            <div class="useful-links">
+                <h2>Useful links</h2>
+                <div class="ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <div class="ul">
+                    <li>
+                        <a href=""> <box-icon type='logo' name='github' color="#f97068"></box-icon> </a>
+                        <a href="#">Github</a>
+                    </li>
+                    <li>
+                        <a href=""><box-icon name='linkedin' type='logo' color="#f97068"></box-icon></a>
+                        <a href="#">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href=""><box-icon name='youtube' type='logo' color="#f97068"></box-icon></a>
+                        <a href="#">Youtube</a>
+                    </li>
+                    <li>
+                        <a href=""><box-icon name='twitter' type='logo' color="#f97068"></box-icon></a>
+                        <a href="#">Twitter</a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="email">
+                <h2>Hire me</h2>
+                <form action="">
+                    <input type="text" placeholder="your name">
+                <input type="email" name="email" id="" placeholder="email">
+                <input type="text" placeholder="subject">
+                <textarea name="message" id="" placeholder="message"></textarea>
+                <button>Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const responsive_menu = document.getElementById("menu")
+
+        responsive_menu.onclick(()=>alert("Clicked"));
+        
+
+    </script>
+</body>
+</html>
