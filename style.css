@@ -63,7 +63,7 @@ a{
 /* HERO SECTION */
 
 .container{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     grid-template-columns: repeat(5, 5fr);
     align-items: center;
@@ -139,13 +139,13 @@ a{
 
 /* ABOUT ME SECTION */
 .container4{
-    padding: 80px;
+    padding: 0 80px 80px 80px;
     display: flex;
-    gap: 10rem;
+    gap: 3rem;
     justify-content: center;
 }
 .container4 img{
-    height: 30rem;
+    height: 25rem;
     width: auto;
     border-radius: 50px;
     background: #f97068;
@@ -286,6 +286,12 @@ a{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         text-align: center;
+    }
+    .container4{
+        display: grid;
+    }
+    .container4 .about-me-text{
+        box-shadow: none;
     }
 
 }
