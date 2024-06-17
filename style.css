@@ -139,7 +139,7 @@ a{
 
 /* ABOUT ME SECTION */
 .container4{
-    padding: 0 80px 80px 80px;
+    padding: 10px 80px 80px 80px;
     display: flex;
     gap: 3rem;
     justify-content: center;
