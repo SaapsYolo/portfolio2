@@ -8,6 +8,7 @@
 }
 html{
     scroll-behavior: smooth;
+     
 }
 body{
     background-color: azure;
@@ -68,6 +69,8 @@ a{
     grid-template-columns: repeat(5, 5fr);
     align-items: center;
     justify-content: center;
+
+    
 
 }
 
@@ -143,6 +146,11 @@ a{
     display: flex;
     gap: 3rem;
     justify-content: center;
+
+    animation: fade linear both ;
+    animation-timeline: view() ;
+    animation-range: entry 10% cover 40%;
+    text-align: center;
 }
 .container4 img{
     height: 25rem;
@@ -150,23 +158,37 @@ a{
     border-radius: 50px;
     background: #f97068;
 }
+.about-me-content{
+    width: 120%;
+}
 .about-me h2 span{
     font-size: 30px ;
 }
+.about-me-content .about-me-text h2, h3 span{
+    color: #f97068;
+}
+
 .about-me .container4 .about-me-content .about-me-text{
-    background: #f97068;
-    padding: 3rem;
+    /* background: #f97068; */
+    padding: 1rem 3rem;
     border-radius: 20px;
-    box-shadow: 10px 10px rgb(0, 0, 0, 0.5);
+    box-shadow:  10px 10px  5px  rgb(0, 0, 0, 0.5);
 }
 .about-me .container4 .about-me-content .about-me-text h3 span{
     font-size: 14px;
     color: #222;
 }
+.
 /* CONTACT ME SECTION */
+
 .contact-me{
     height: auto;
     background-color: #222;
+
+    
+    animation: fade linear both ;
+    animation-timeline: view() ;
+    animation-range: entry .5% cover 10%;
 }
 .container3{
     padding: 80px;
@@ -237,6 +259,28 @@ a{
     background-color: #f8564e;
     
 }
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+    padding: 1rem;
+}
+footer h3{
+    font-size: 16px;
+    color: #f97068;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        scale: .5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
 @media (max-width:900px) {
     .container3{
         display: grid;
@@ -288,7 +332,11 @@ a{
         text-align: center;
     }
     .container4{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
     .container4 .about-me-text{
         box-shadow: none;
